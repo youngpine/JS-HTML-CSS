@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <style>
+        #canvas{
+            background:#000;
+            float:left;
+        }
+        #grade{
+            float:left;
+            padding-left:40px;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="800" height="600">
+    您好，你的浏览器不支持canvas元素，请升级浏览器
+</canvas>
+<div id="grade">
+    分数：<span id="g"></span>
+</div>
+<script>
+    function $id(id){
+        return document.getElementById(id);
+    }
+    function Food(x,y){
+        this.x=x;
+        this.y=y;
+        var ctx=$id("canvas").getContext("2d");
+        ctx.fillStyle="#fff";
+        this.draw=function(){
+            ctx.fillRect(this.x,this.y,10,10);
+        }
+        this.clear=function(){
+            ctx.clearRect(this.x,this.y,10,10);
+        }
+    }
+    function Snake(count,speed,direction,food){
+        this.positionx=new Array(this.count);
+        this.positiony=new Array(this.count);
+        this.count=count;
+        this.speed=speed;
+        this.status=true;
+        this.food=food;
+        this.food.draw();
+        this.direction=direction;//1-up;2-right;3-down;4-left
+        var ctx=$id("canvas").getContext("2d");
+        ctx.fillStyle="#fff";
+        this.draw=function(){
+            for(var i=0;i<this.count;i++)
+                ctx.fillRect(this.positionx[i],this.positiony[i],10,10);
+        }
+        this.clear=function(){
+            for(var i=0;i<this.count;i++)
+                ctx.clearRect(this.positionx[i],this.positiony[i],10,10);
+        }
+        this.move=function(){
+            switch(this.direction){
+                case 1:
+                    if(this.positiony[0]==0){
+                        this.status=false;
+                        break;
+                    }
+                    if(this.positiony[0]==this.food.y+10&&this.positionx[0]==this.food.x){
+                        this.count++;
+                        this.food=new Food(Math.floor(79*Math.random())*10,Math.floor(59*Math.random())*10);
+                        this.food.draw();
+                    }
+                    for(var i=this.count-1;i>0;i--){
+                        this.positionx[i]=this.positionx[i-1];
+                        this.positiony[i]=this.positiony[i-1];
+                        if(i>2&&this.positionx[0]==this.positionx[i]&&this.positiony[0]==this.positiony[i]){
+                            this.status=false;
+                            break;
+                        }
+                    }
+                    this.positiony[0]-=10;
+
+                    break;
+                case 2:
+                    if(this.positionx[0]==800){
+                        this.status=false;
+                        break;
+                    }
+                    if(this.positionx[0]+10==this.food.x&&this.positiony[0]==this.food.y){
+                        this.count++;
+                        this.food=new Food(Math.floor(79*Math.random())*10,Math.floor(59*Math.random())*10);
+                        this.food.draw();
+                    }
+                    for(var i=this.count-1;i>0;i--){
+                        this.positionx[i]=this.positionx[i-1];
+                        this.positiony[i]=this.positiony[i-1];
+                        if(i>2&&this.positionx[0]==this.positionx[i]&&this.positiony[0]==this.positiony[i]+10){
+                            this.status=false;
+                            break;
+                        }
+                    }
+                    this.positionx[0]+=10;
+
+                    break;
+                case 3:
+                    if(this.positiony[0]==600){
+                        this.status=false;
+                        break;
+                    }
+                    if(this.positiony[0]+10==this.food.y&&this.positionx[0]==this.food.x){
+                        this.count++;
+                        this.food=new Food(Math.floor(79*Math.random())*10,Math.floor(59*Math.random())*10);
+                        this.food.draw();
+                    }
+                    for(var i=this.count-1;i>0;i--){
+                        this.positionx[i]=this.positionx[i-1];
+                        this.positiony[i]=this.positiony[i-1];
+                        if(i>2&&this.positionx[0]==this.positionx[i]&&this.positiony[0]==this.positiony[i]){
+                            this.status=false;
+                            break;
+                        }
+                    }
+                    this.positiony[0]+=10;
+
+                    break;
+                case 4:
+                    if(this.positionx[0]==0){
+                        this.status=false;
+                        break;
+                    }
+                    if(this.positionx[0]==this.food.x+10&&this.positiony[0]==this.food.y){
+                        this.count++;
+                        this.food=new Food(Math.floor(79*Math.random())*10,Math.floor(59*Math.random())*10);
+                        this.food.draw();
+                    }
+                    for(var i=this.count-1;i>0;i--){
+                        this.positionx[i]=this.positionx[i-1];
+                        this.positiony[i]=this.positiony[i-1];
+                        if(i>2&&this.positionx[0]==this.positionx[i]&&this.positiony[0]==this.positiony[i]){
+                            this.status=false;
+                            break;
+                        }
+                    }
+                    this.positionx[0]-=10;
+
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    var snake=new Snake(6,1,2,new Food(Math.floor(79*Math.random())*10,Math.floor(59*Math.random())*10));
+    for(var j=0;j<snake.count;j++){
+        snake.positionx[j]=70-10*j;
+        snake.positiony[j]=10;
+    }
+    snake.draw();
+    var go=setInterval(
+            function(){
+                snake.clear();
+                snake.move();
+                $id("g").innerText=""+(snake.count-6)*5;
+                if(snake.status==false){
+                    clearInterval(go);
+                    alert("Game Over");
+                }
+                snake.draw();
+
+            },100*snake.speed);
+    window.onkeypress=function(e){
+        switch(e.keyCode){
+            //119-w;100-d;97-a;115-s
+            case 119:
+                if(snake.positiony[1]!=snake.positiony[0]-10)
+                    snake.direction=1;
+                break;
+            case 100:
+                if(snake.positionx[1]!=snake.positionx[0]+10)
+                    snake.direction=2;
+                break;
+            case 97:
+                if(snake.positionx[1]!=snake.positionx[0]-10)
+                    snake.direction=4;
+                break;
+            case 115:
+                if(snake.positiony[1]!=snake.positiony[0]+10)
+                    snake.direction=3;
+                break;
+            default :
+                break;
+        }
+    }
+</script>
+</body>
+</html>
