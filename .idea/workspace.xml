@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="604f8645-1283-4653-8cf6-9942a038a328" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Slider/slider.css" afterPath="$PROJECT_DIR$/Slider/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JS-HTML-CSS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +30,7 @@
       <file leaf-file-name="slider.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Slider/slider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="5" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.91871923" vertical-offset="640" max-vertical-offset="1518">
+            <state line="41" column="0" selection-start="974" selection-end="1035" vertical-scroll-proportion="0.35745296" vertical-offset="655" max-vertical-offset="1518">
               <folding />
             </state>
           </provider>
@@ -70,8 +72,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1186" />
+    <option name="width" value="1292" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -157,20 +159,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="JS-HTML-CSS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JS-HTML-CSS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JS-HTML-CSS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Slider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -271,17 +259,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1292" height="1036" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1828125" sideWeight="0.8091168" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18260188" sideWeight="0.8095238" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19088319" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1904762" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19323671" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -306,11 +294,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Slider/slider.html">
+    <entry file="file://$PROJECT_DIR$/Slider/slider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="0" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="814">
+        <state line="63" column="5" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="1518">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Slider/slider.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="6" selection-start="0" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="814" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.css">
@@ -322,16 +315,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="0" selection-end="2392" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="2376">
-          <folding />
-        </state>
+        <state line="10" column="21" selection-start="0" selection-end="2392" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="2376" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="29" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="814">
-          <folding />
-        </state>
+        <state line="26" column="29" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="814" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.css">
@@ -343,16 +332,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="2" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
-          <folding />
-        </state>
+        <state line="39" column="2" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="7" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
-          <folding />
-        </state>
+        <state line="22" column="7" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.css">
@@ -364,23 +349,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="46" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
-          <folding />
-        </state>
+        <state line="4" column="46" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="0" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="330">
-          <folding />
-        </state>
+        <state line="5" column="7" selection-start="0" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="330" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="220">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="220" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/images/img04.JPG">
@@ -390,21 +369,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="0" selection-end="2392" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
-          <folding />
-        </state>
+        <state line="10" column="21" selection-start="0" selection-end="2392" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="0" selection-end="795" vertical-scroll-proportion="0.16876574" vertical-offset="20" max-vertical-offset="814">
-          <folding />
-        </state>
+        <state line="7" column="6" selection-start="0" selection-end="795" vertical-scroll-proportion="0.16876574" vertical-offset="20" max-vertical-offset="814" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Slider/slider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="5" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.91871923" vertical-offset="640" max-vertical-offset="1518">
+        <state line="41" column="0" selection-start="974" selection-end="1035" vertical-scroll-proportion="0.35745296" vertical-offset="655" max-vertical-offset="1518">
           <folding />
         </state>
       </provider>
