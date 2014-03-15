@@ -64,9 +64,9 @@ function PopUp(title,content){
     this.onmousemove=function(idName,event){
          event = e(event);
          object=event.target;
-         if(object.id == idName) {
-               ox = parseInt(object.offsetLeft);
-               oy = parseInt(object.offsetTop);
+         if(object.className =="title") {
+               ox = parseInt(object.parentNode.offsetLeft);
+               oy = parseInt(object.parentNode.offsetTop);
                mx = event.mx;
                my = event.my;
                document.onmousemove = that.move;
@@ -76,15 +76,15 @@ function PopUp(title,content){
     //鼠标移动
     this.move=function(event) {
         event = e(event);
-        object.style.left = ox + event.mx - mx+object.offsetWidth/2 + "px";
-        object.style.top = oy + event.my - my+object.offsetHeight/2 + "px";
+        object.parentNode.style.left = ox + event.mx - mx+object.parentNode.offsetWidth/2 + "px";
+        object.parentNode.style.top = oy + event.my - my+object.parentNode.offsetHeight/2 + "px";
     }
 
     //松开鼠标
     this.stop=function(event) {
         event = e(event);
-        ox = parseInt(object.offsetLeft);
-        oy = parseInt(object.offsetTop);
+        ox = parseInt(object.parentNode.offsetLeft);
+        oy = parseInt(object.parentNode.offsetTop);
         mx = event.mx;
         my = event.my;
         object = document.onmousemove = document.onmouseup = null;  // 释放所有操作对象

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>弹出窗口</title>
+    <link href="css/msgbox.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="body">
+<div class="choose">
+    <ul>
+        <li id="button">点击弹出窗口</li>
+    </ul>
+</div>
+<script src="js/base.js"></script>
+<script src="js/msgbox.js"></script>
+<script>
+    var args={
+        title:"标题",
+        content:"这是内容"
+    }
+    var msg=new Msgbox(args);
+    msg.createBox("button");
+    msg.behaviour("body");
+    msg.delete();
+
+
+</script>
+</body>
+</html>
